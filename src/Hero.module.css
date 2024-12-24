@@ -1,0 +1,170 @@
+/* Style de la section Hero */
+
+.hero {
+    position: relative;
+    background-image: url('https://fecoms.com/wp-content/uploads/2024/02/banner-shopify-listing1-1.jpg'); /* Image de fond */
+    background-size: cover; /* L'image couvre l'entière section */
+    background-position: center; /* L'image est centrée */
+    height: 75vh; /* Réduit la hauteur à 50% de la hauteur de l'écran */
+    display: flex;
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    align-items: center; /* Aligne le contenu verticalement au centre */
+    padding-left: 20px; /* Réduit l'espacement à gauche */
+    overflow: hidden; /* Empêche l'image de déborder */
+    background-attachment: fixed; /* Effet de parallaxe (optionnel) */
+    color: white; /* Texte blanc pour contraster avec l'image */
+}
+  
+  /* Style pour le nom du site "ChicShop" avec une animation de flottement */
+  .siteName {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff6347; /* Couleur initiale du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+    animation: floatInAndChangeColor 6s ease-in-out infinite; /* Animation répétée */
+  }
+  
+  /* Animation pour faire apparaître le texte et le faire flotter */
+  @keyframes floatInAndChangeColor {
+    0% {
+      transform: translateY(20px); /* Le texte commence en bas */
+      opacity: 0;
+      color: #ff6347; /* Couleur initiale */
+    }
+    50% {
+      transform: translateY(-10px); /* Le texte se déplace légèrement vers le haut */
+      opacity: 1;
+      color: hwb(27 1% 1%); /* Changement de couleur à mi-animation (orange) */
+    }
+    100% {
+      transform: translateY(20px); /* Le texte retourne à sa position de départ */
+      opacity: 0;
+      color: #ff6347; /* Retour à la couleur initiale */
+    }
+  }
+  
+  /* Style pour l'image de fond sans animation */
+  .heroImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 0; /* Assurer que l'image soit en arrière-plan */
+  }
+  
+  /* Style pour le contenu de la section Hero */
+  .heroContent {
+    position: relative;
+    left: 50px;
+    text-align: left;
+    color: #fff;
+    z-index: 1; /* Contenu au-dessus de l'image */
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s; /* Légèrement retardé */
+  }
+  
+  /* Animation pour l'apparition du contenu */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Glissement vers la gauche */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Retour à la position normale */
+    }
+  }
+  
+  /* Style pour le titre */
+  .heroTitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff6347;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour la description */
+  .heroDescription {
+    font-size: 22px;
+    color: hsl(24, 94%, 48%); /* Couleur de la description */
+    margin: 20px 0;
+    opacity: 0.8;
+  }
+  
+  /* Style pour le bouton */
+  .heroButton {
+    background-color: #f8a600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .heroButton:hover {
+    background-color: #f08a00;
+    transform: scale(1.1); /* Effet de zoom au survol */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

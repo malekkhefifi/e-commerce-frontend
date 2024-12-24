@@ -1,0 +1,91 @@
+/* Basic reset for form elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .filter-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter-container h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .filter-group {
+    margin-bottom: 15px;
+  }
+  
+  .filter-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .filter-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    outline: none;
+  }
+  
+  .filter-group select:focus {
+    border-color: #4a90e2;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .checkbox-container label {
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .checkbox-container label input:checked {
+    accent-color: #4a90e2; /* Custom checkbox color when checked */
+  }
+  
+  .checkbox-container label input:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .filter-container h3 {
+      font-size: 16px;
+    }
+  
+    .filter-group select, .checkbox-container label {
+      font-size: 13px;
+    }
+  }
+  
